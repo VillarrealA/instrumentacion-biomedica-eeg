@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Datos fisiológicos crudos de participantes
+datos/crudos/*
+!datos/crudos/README.md
+
+# Descargas locales de PhysioNet
+datos/physionet/
+
+# Series temporales procesadas de participantes
+resultados/equipo*/**/*_procesada.csv
+resultados/equipo*/**/*_epocas.csv
+
+# Archivos temporales
+*.tmp
+*.log

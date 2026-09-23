@@ -1,0 +1,26 @@
+{
+  "source": "Backyard Brains",
+  "input_file": "demo_backyard_eventos.csv",
+  "fs_hz": 499.99999999999955,
+  "signal_unit": "uV",
+  "bandpass_hz": [
+    0.5,
+    30.0
+  ],
+  "notch_hz": null,
+  "epoch_window_s": [
+    -0.2,
+    0.5
+  ],
+  "baseline_window_s": [
+    -0.2,
+    0.0
+  ],
+  "events_detected": 18,
+  "epochs_accepted": 18,
+  "epochs_rejected_bounds": 0,
+  "epochs_rejected_amplitude": 0,
+  "descriptive_peak_latency_s": 0.2280000000000002,
+  "descriptive_peak_amplitude_uv": 7.069078878907286,
+  "interpretation_warning": "La latencia y amplitud son descriptivas; requieren revisar sincronía, repetibilidad y artefactos."
+}

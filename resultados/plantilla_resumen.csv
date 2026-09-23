@@ -1,0 +1,4 @@
+equipo,fuente,sujeto_o_registro,canal,fs_hz,unidad,duracion_o_epoca,p_alfa_abiertos_uv2,p_alfa_cerrados_uv2,r_alfa,eventos,ensayos_aceptados,ensayos_rechazados,latencia_descriptiva_s,amplitud_descriptiva_uv,artefacto_principal,decision_calidad
+equipoXX,BIOPAC,S01,,,,10 s,,,,,,,,,,
+equipoXX,Backyard Brains,S01,,,,pre/post,,,,,,,,,,
+equipoXX,PhysioNet,S001 R01-R02,O1,160,uV,10 s,,,,,,,,,,

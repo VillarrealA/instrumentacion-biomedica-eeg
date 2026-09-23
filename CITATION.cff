@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Si utiliza este material docente, cite el repositorio y las fuentes de datos indicadas en el README."
+title: "Práctica de electroencefalografía: BIOPAC, Backyard Brains y PhysioNet"
+type: software
+authors:
+  - family-names: "Villarreal López"
+    given-names: "Alejandro"
+year: 2026
+license: MIT

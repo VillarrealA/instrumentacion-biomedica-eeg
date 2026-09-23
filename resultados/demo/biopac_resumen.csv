@@ -1,0 +1,2 @@
+source,channel,fs_hz,duration_s,alpha_open_uv2,alpha_closed_uv2,relative_alpha_open,relative_alpha_closed,alpha_ratio_closed_open
+BIOPAC,DEMO,160.0000000000091,10.0,14.376697397301824,164.82186553318303,0.4812839381729895,0.9020686387890505,11.464515178855772

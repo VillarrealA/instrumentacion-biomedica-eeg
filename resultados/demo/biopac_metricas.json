@@ -1,0 +1,45 @@
+{
+  "source": "BIOPAC",
+  "channel": "DEMO",
+  "fs_hz": 160.0000000000091,
+  "signal_unit": "uV",
+  "window_duration_s": 10.0,
+  "eyes_open_start_s": 2.0,
+  "eyes_closed_start_s": 2.0,
+  "analysis_band_hz": [
+    0.5,
+    40.0
+  ],
+  "alpha_band_hz": [
+    8.0,
+    13.0
+  ],
+  "notch_hz": null,
+  "welch_segment_s": 2.0,
+  "eyes_open": {
+    "mean_uv": 0.022704273963946527,
+    "std_uv": 5.538264520159597,
+    "peak_to_peak_uv": 34.53781435196172,
+    "alpha_power_uv2": 14.376697397301824,
+    "total_power_0_5_40_uv2": 29.871550361471567,
+    "relative_alpha": 0.4812839381729895
+  },
+  "eyes_closed": {
+    "mean_uv": -0.3963908250573969,
+    "std_uv": 13.67834039665828,
+    "peak_to_peak_uv": 73.77100435893055,
+    "alpha_power_uv2": 164.82186553318303,
+    "total_power_0_5_40_uv2": 182.7154369920699,
+    "relative_alpha": 0.9020686387890505
+  },
+  "alpha_ratio_closed_open": 11.464515178855772,
+  "metadata": {
+    "open_file": "demo_biopac_abiertos.csv",
+    "closed_file": "demo_biopac_cerrados.csv",
+    "input_unit": "uV",
+    "open_signal_column": "eeg_uv",
+    "closed_signal_column": "eeg_uv",
+    "open_time_column": "time_s",
+    "closed_time_column": "time_s"
+  }
+}
