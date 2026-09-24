@@ -168,8 +168,42 @@ muestreo. Para elegir columnas específicas están disponibles `--time-column` y
 
 Erin mostrará el montaje, el software y el procedimiento operativo. El equipo
 de estudiantes debe concentrarse en registrar los metadatos, los eventos, el
-número de ensayos y la calidad. Si se obtiene un CSV con columnas de tiempo,
-señal y evento, puede analizarse con:
+número de ensayos y la calidad. En Spike Recorder de escritorio, inicie la
+grabación y conserve juntos los dos archivos nativos:
+
+```text
+registro.wav
+registro-events.txt
+```
+
+Si comparten el nombre base, el programa localiza automáticamente el archivo de
+eventos:
+
+```bash
+python scripts/analiza_backyard.py \
+  datos/crudos/registro.wav \
+  --pre 0.2 --post 0.6 \
+  --output-dir resultados/equipo01/backyard
+```
+
+Si el archivo de eventos tiene otro nombre o se desea una sola clase de
+estímulo, utilice `--events` y `--event-name`:
+
+```bash
+python scripts/analiza_backyard.py \
+  datos/crudos/registro.wav \
+  --events datos/crudos/mis-eventos.txt \
+  --event-name 2 \
+  --output-dir resultados/equipo01/backyard
+```
+
+Cada renglón de `-events.txt` tiene la forma
+`nombre,tiempo_en_segundos`. En archivos multicanal se selecciona el canal con
+`--channel 0`, `--channel 1`, etcétera. Los WAV clásicos se reportan en
+**unidades arbitrarias (u.a.)**; no se interpretan como microvoltios sin una
+calibración documentada.
+
+El formato CSV se conserva para la demostración y como alternativa:
 
 ```bash
 python scripts/analiza_backyard.py \
@@ -179,10 +213,9 @@ python scripts/analiza_backyard.py \
   --output-dir resultados/equipo01/backyard
 ```
 
-La plantilla esperada está en `config/backyard_eventos_plantilla.csv`. Si el
-software no exporta datos compatibles, se entrega una captura del trazo o del
+La plantilla CSV está en `config/backyard_eventos_plantilla.csv`. Si no se
+obtienen marcas temporales confiables, se entrega una captura del trazo o del
 promedio, acompañada por la hoja de metadatos y una descripción de los ensayos.
-No se debe improvisar una conversión durante la clase.
 
 ### Estación C — PhysioNet
 
